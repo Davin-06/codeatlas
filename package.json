@@ -1,0 +1,42 @@
+{
+    "name": "code-atlas-knowledge-base",
+    "description": "面向计算机学习者的可检索知识地图",
+    "version": "1.0.0",
+    "type": "module",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently -k -n API,WEB -c blue,green \"npm:dev:api\" \"npm:dev:web\"",
+        "dev:web": "vite frontend --config frontend/vite.config.js",
+        "dev:api": "node --watch server/index.js",
+        "build": "vite build frontend --config frontend/vite.config.js",
+        "preview": "vite preview frontend --config frontend/vite.config.js",
+        "start": "node server/index.js",
+        "test": "node --test server/tests/api.test.js",
+        "test:watch": "node --test --watch server/tests/api.test.js"
+    },
+    "dependencies": {
+        "axios": "^1.6.0",
+        "dotenv": "^18.0.4",
+        "express": "^5.1.0",
+        "nodemailer": "^10.0.13",
+        "pinia": "^2.1.0",
+        "vue": "^3.4.0",
+        "vue-router": "^4.3.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.2.4",
+        "concurrently": "^9.2.1",
+        "vite": "^6.4.3"
+    },
+    "engines": {
+        "node": ">=20.0.0",
+        "npm": ">=9.0.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead",
+        "not ie <= 11"
+    ]
+}

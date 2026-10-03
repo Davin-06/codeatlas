@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+*.db
+*.sqlite
+*.sqlite3
+
+# Dependencies 
+node_modules/
+vendor/
+
+# Build output
+dist/
+build/
+artifacts/
+server/data/*.json
+server/data/*.bak
+server/data/*.tmp
+
+# IDE
+.vscode/
+.idea/
+.codeartsd/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
+
+#other
+.codegraph
+
+# ---- 敏感信息（禁止提交到公开仓库）----
+# 服务器运维文档：含服务器 IP、宝塔面板、密钥与内部路径
+docs/CodeAtlas_运维文档.md
+docs/
+# 本地脱敏备份
+.sanitize-backup/
+# AI 协作记忆（含服务器细节与密钥）
+.workbuddy-ai/
+.workbuddy/
+# WorkBuddy 应用文件
+*.genie
+# 账号权限说明（含管理员邮箱）
+账号权限等级说明.txt
+
+# 运行日志与临时验证产物
+artifacts/
+*.log
+.codegraph/
+
+
+
